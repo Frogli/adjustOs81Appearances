@@ -1,0 +1,4 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	;  Calculate newColor as oldColor     ;; reverts to previous color
+	Calculate newColor as kColorDefault     ;; reverts to default color
+	Do method $readAppearances

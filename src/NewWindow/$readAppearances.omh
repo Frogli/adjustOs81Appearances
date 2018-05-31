@@ -1,0 +1,12 @@
+;  Breakpoint
+Calculate path as con(sys(115),'studio/appearance.json')
+Do UtilFile.$openfile(path) Returns error
+Do UtilFile.$readcharacter(kUniTypeAuto,appearances) Returns error
+
+Do OJSON.$jsontolistorrow(appearances) Returns appearancesRow
+Do method setColor (appearancesRow)
+Do OJSON.$listorrowtojson(appearancesRow,kUniTypeCharacter) Returns appearancesNew
+
+Do UtilFile.$writecharacter(kUniTypeUTF8,appearancesNew,kFalse) Returns error
+Do UtilFile.$closefile()
+Do $prefs.$appearance.$assign(appearancesRow)

@@ -1,0 +1,5 @@
+;  If flag true
+;  For  from 1 to 1 step 1
+;  Calculate #1 as 'Stop'
+;  End For
+;  End If

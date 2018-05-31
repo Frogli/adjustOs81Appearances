@@ -1,0 +1,2 @@
+Do oldColor.$assign(anAppearancesRow.colorlistoddrowbackground)
+Do anAppearancesRow.colorlistoddrowbackground.$assign(newColor)
